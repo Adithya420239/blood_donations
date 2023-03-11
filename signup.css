@@ -1,0 +1,19 @@
+div{
+  padding: 10px;
+}
+body{
+  position: absolute;
+  padding-left: 500px;
+  text-align:center;
+}
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdCwjpXiRL6Yeu4D3BSAIzWq35s1T1x7yfYA&usqp=CAU');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  color: #FFFFFF;
+}
+div{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
