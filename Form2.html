@@ -1,0 +1,597 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5CSpMNq5SligPT6jXZrx56bUaeOcaH_tQg&usqp=CAU">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body background="background.jpg" style="margin-left: 25%;margin-right: 29%;border-style: solid">
+    <tbody>
+        <tr>
+            <td background="../../imgs/bg_middle_inner.gif">
+                <!-- Add Code Here -->
+                <table style="background-color: aliceblue;" cellspacing="0" cellpadding="5" width="688">
+                    <tr>
+                        <td background="../../imgs/bg_head_inner.gif" height="32">
+                            <strong>About
+                                Blood Donors: Register</strong>
+                        </td>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td height="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30"><a href="whocancant.html">Who can/ Can't Donate</a></td>
+                        </tr>
+                        <tr>
+                            <form action="/" method="post">
+                                <td valign="top">
+                                    Please fill the following information to register as voluntary blood donor. Kindly
+                                    update your date of donation once done, so that your name will be hidden
+                                    automatically till next 3 Months. Also please update your profile/information if in
+                                    case you relocate in future.
+                                    <p align="center" class="heading_white" style="border-style: groove;">
+                                        <strong>REGISTRATION FORM</strong>
+                                    </p>
+                                    <table style="background-color: aliceblue;" cellspacing="1" cellpadding="3"
+                                        width="70%" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" align="center">
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="107" style="width: 115px">
+                                                    <strong>Full Name</strong>
+                                                </td>
+                                                <td width="30" height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td width="307" style="width: 327px">
+                                                    <input name="txtFullName" type="text" maxlength="30"
+                                                        id="txtFullName" class="textarea">
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#ffffff">
+                                                <td style="width: 107px">
+                                                    <strong>Blood Group</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <select name="dpBloodGroup" id="dpBloodGroup" class="textarea">
+                                                        <option value="Select">-----Select-----</option>
+                                                        <option value="A+">A+</option>
+                                                        <option value="A-">A-</option>
+                                                        <option value="A1+">A1+</option>
+                                                        <option value="A1-">A1-</option>
+                                                        <option value="A1B+">A1B+</option>
+                                                        <option value="A1B-">A1B-</option>
+                                                        <option value="A2+">A2+</option>
+                                                        <option value="A2-">A2-</option>
+                                                        <option value="A2B+">A2B+</option>
+                                                        <option value="A2B-">A2B-</option>
+                                                        <option value="AB+">AB+</option>
+                                                        <option value="AB-">AB-</option>
+                                                        <option value="B+">B+</option>
+                                                        <option value="B-">B-</option>
+                                                        <option value="Bombay Blood Group">Bombay Blood Group</option>
+                                                        <option value="INRA">INRA</option>
+                                                        <option value="O+">O+</option>
+                                                        <option value="O-">O-</option>
+
+                                                    </select>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr bgcolor="#e5e5e5">
+                                                <td height="30" colspan="3" style="text-align: center;">
+                                                    <strong>Contact Information</strong>
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#ffffff">
+                                                <td style="width: 107px">
+                                                    <strong>Mobile Number<br>
+                                                        <font color="blue" size="1"></font>
+                                                    </strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <input name="txtMobileNumber" type="text" maxlength="10"
+                                                        id="txtMobileNumber" class="textarea"
+                                                        onkeypress="javascript:return allowOnlyNumbers(event);">
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#ffffff">
+                                                <td class="style5">
+                                                    <strong>Land Line Number<br>
+                                                    </strong>(Eg: 0863351725)
+                                                </td>
+                                                <td class="style3">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td class="style4">
+                                                    <input name="txtLandLineNumber" type="text" maxlength="12"
+                                                        id="txtLandLineNumber" class="textarea"
+                                                        onkeypress="javascript:return allowOnlyNumbers(event);">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style12">
+                                                    <strong>Select Country</strong>
+                                                </td>
+                                                <td class="style13">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td class="style14">
+
+                                                    <select name="dpCountry" id="dpCountry" class="textarea">
+
+                                                        <option value="">-----Select-----</option>
+                                                        <option value="1">INDIA</option>
+                                                        <input type="hidden" name="CountryCascading_ClientState"
+                                                            id="CountryCascading_ClientState" value="::::::">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style12">
+                                                    <strong>Select State</strong>
+                                                </td>
+                                                <td class="style13">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td class="style14">
+                                                    <select name="dpState" id="dpState" class="findbloodlistmenu"
+                                                        onchange="populateDistricts()">
+                                                        <option value="">Select State</option>
+                                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                        <option value="Bihar">Bihar</option>
+                                                        <option value="Gujarat">Gujarat</option>
+                                                        <option value="Karnataka">Karnataka</option>
+                                                        <option value="Kerala">Kerala</option>
+                                                        <option value="Maharashtra">Maharashtra</option>
+                                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                        <option value="Punjab">Punjab</option>
+                                                        <option value="Rajasthan">Rajasthan</option>
+                                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                                        <option value="Telangana">Telangana</option>
+                                                    </select>
+                                                    <input type="hidden" name="StateCascading_ClientState"
+                                                        id="StateCascading_ClientState" value="::::::">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 107px">
+                                                    <strong>Select District</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <div id="dv">
+                                                        <select name="dpDistrict" id="dpDistrict"
+                                                            class="findbloodlistmenu" onchange="populateCities()">
+                                                            <option value="">Select District</option>
+                                                        </select>
+                                                        <input type="hidden" name="DistrictCascading_ClientState"
+                                                            id="DistrictCascading_ClientState" value="::::::">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 107px">
+                                                    <strong>Select City</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <div id="dv1">
+                                                        <select name="dpCity" id="dpCity" class="findbloodlistmenu">
+                                                            <option value="">Select City</option>
+                                                        </select>
+                                                        <input type="hidden" name="CityCascading_ClientState"
+                                                            id="CityCascading_ClientState" value="::::::">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#ffffff">
+                                                <td style="width: 107px">
+                                                    <strong>E-Mail ID</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <input name="txtEmailId" type="text" maxlength="100" id="txtEmailId"
+                                                        class="textarea">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 107px">
+                                                    <strong>UserId</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+
+                                                <td style="width: 327px">
+                                                    <div>
+                                                        <div id="PnlUsrDetails">
+
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+
+                                                                        <td style="width: 327px">
+                                                                            <input name="txtUserName" type="text"
+                                                                                maxlength="100"
+                                                                                onchange="javascript:setTimeout('__doPostBack(\'txtUserName\',\'\')', 0)"
+                                                                                onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return IsAlphaNumeric(event);"
+                                                                                id="txtUserName" ondrop="return false;"
+                                                                                onpaste="return false;">
+                                                                            <span id="error"
+                                                                                style="color: Red; display: none">*
+                                                                                Special Characters not allowed, Please
+                                                                                use only letters (a-z) and
+                                                                                numbers</span>
+
+                                                                            <div class="waitingdiv" id="loadingdiv"
+                                                                                style="display: none; margin-left: 5.3em">
+                                                                                <img src="../../images/LoadingImage.gif"
+                                                                                    alt="Loading">Please wait...
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr id="trPassword">
+                                                <td style="width: 107px">
+                                                    <strong>Password</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <input name="txtUserPassword" type="password" maxlength="50"
+                                                        id="txtUserPassword" class="textarea">
+                                                </td>
+                                            </tr>
+
+                                            <tr id="trRetypePassword">
+                                                <td style="width: 107px">
+                                                    <strong>Re-type Password</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <input name="txtRetypePassword" type="password" maxlength="50"
+                                                        id="txtRetypePassword" class="textarea">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 107px">
+                                                    <strong>Please confirm your availability to donate blood</strong>
+                                                </td>
+                                                <td height="30">
+                                                    <strong>:</strong>
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <select name="dpAvailUnAvailable" id="dpAvailUnAvailable">
+                                                        <option selected="selected" value="A">Available</option>
+                                                        <option value="U">UnAvailable</option>
+
+                                                    </select>
+
+                                                </td>
+                                            </tr>
+
+                                            <!-- Captcha V2 functionality -->
+                                            <tr>
+                                                <td style="width: 107px">
+                                                </td>
+                                                <td height="30">
+
+                                                </td>
+                                                <td style="width: 327px">
+                                                    <div id="ReCaptchContainer"></div>
+                                                    <label id="lblMessage"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 107px">
+                                                </td>
+                                                <td valign="top" height="30">
+                                                    <input type="checkbox" id="chkTermsAndCondition"
+                                                        name="chkTermsAndCondition">
+                                                </td>
+                                                <td style="width: 327px">
+                                                    I authorise this website to display my name and telephone number, so
+                                                    that the needy could contact me, as and when there is an emergency.
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#ffffff">
+                                                <td colspan="3" height="30">
+                                                    <div align="center">
+                                                        &nbsp;
+                                                        <input name="hidDistrict" type="hidden" id="hidDistrict">
+                                                        <button id="btn" type="submit"
+                                                            onclick="if(!RegistrationValidation()) return;__doPostBack('btnSubmit','')"
+                                                            <button>Submit</button>
+                                                        <a href="login.html"><input type="button" id="Next_btn"
+                                                                value="Next" /></a><br>
+
+
+                                                        <input name="hidCity" type="hidden" id="hidCity">
+                                                    </div>
+                                                    <div class="contact">
+                                                        <a href="contact.html"
+                                                            style="background-color: aliceblue; margin: 10px;">Contact
+                                                            Us</a>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+
+                                </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+
+
+    </tbody>
+    </form>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        // var callBackFrameUrl='/WebResource.axd?d=xOe_pA_w2wThOyJHFlYkQ2yvzyWvifeyAMWKAeJJOOrG0QJDTeSlOGQ4HlikCTTvbEu7oK6yOXBOzp-vM9wVzOWukzhMlrY8wkyykvEDEOc1&t=637814401746327080';
+        // WebForm_InitCallback();//]]>
+
+        function populateDistricts() {
+            var state = document.getElementById("dpState").value;
+            var district = document.getElementById("dpDistrict");
+
+            district.innerHTML = "";
+            if (state === "") {
+                return;
+            }
+
+            var districts = [];
+            switch (state) {
+                case "Andhra Pradesh":
+                    districts = ["Chittoor", "East Godavari", "Guntur", "Krishna", "Kurnool", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari", "YSR Kadapa"];
+                    break;
+                case "Bihar":
+                    districts = ["Araria", "Bhagalpur", "Gaya", "Madhubani", "Muzaffarpur", "Patna", "Rohtas", "Saran", "Vaishali"];
+                    break;
+                case "Gujarat":
+                    districts = ["Ahmedabad", "Bhavnagar", "Gandhinagar", "Junagadh", "Kutch", "Mehsana", "Rajkot", "Surat", "Vadodara"];
+                    break;
+                case "Karnataka":
+                    districts = ["Bangalore Urban", "Belgaum", "Dharwad", "Gulbarga", "Hassan", "Mysore", "Raichur", "Shimoga", "Tumkur"];
+                    break;
+                case "Kerala":
+                    districts = ["Alappuzha", "Ernakulam", "Kannur", "Kollam", "Kottayam", "Palakkad", "Thrissur", "Thiruvananthapuram", "Wayanad"];
+                    break;
+                case "Maharashtra":
+                    districts = ["Ahmednagar", "Aurangabad", "Kolhapur", "Mumbai City", "Mumbai Suburban", "Nagpur", "Nashik", "Pune", "Thane", "Satara"];
+                    break;
+                case "Madhya Pradesh":
+                    districts = ["Bhopal", "Indore", "Gwalior", "Jabalpur", "Ujjain", "Sagar", "Rewa", "Katni", "Chhindwara", "Balaghat"];
+                    break;
+                case "Punjab":
+                    districts = ["Amritsar", "Jalandhar", "Ludhiana", "Patiala", "Bathinda", "Hoshiarpur", "Moga", "Pathankot", "Sangrur", "Fazilka"];
+                    break;
+                case "Rajasthan":
+                    districts = ["Jaipur", "Jodhpur", "Udaipur", "Kota", "Bikaner", "Ajmer", "Alwar", "Bharatpur", "Barmer", "Churu"];
+                    break;
+                case "Tamil Nadu":
+                    districts = ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Vellore", "Erode", "Thanjavur", "Dindigul"];
+                    break;
+                case "Telangana":
+                    districts = ["Adilabad", "Kumarambheem-Asifabad", "Hyderabad", "Jagtial", "Jangaon", "Jayashankar Bhupalapally", "Jogulamba Gadwal", "Kamareddy", "Karimnagar", "Khammam"];
+                    break;
+
+                default:
+                    districts = ["Select state first"];
+
+            }
+            district.options.add(new Option("Select District", ""));
+            for (var i = 0; i < districts.length; i++) {
+                district.options.add(new Option(districts[i], districts[i]));
+            }
+        }
+
+        function populateCities() {
+            var district = document.getElementById("dpDistrict").value;
+            var city = document.getElementById("dpCity");
+
+            city.innerHTML = "";
+            if (district === "") {
+                return;
+            }
+
+            var cities;
+            switch (district) {
+                case "Ahmednagar":
+                    cities = ["Ahmednagar", "Shirdi", "Sangamner", "Rahuri", "Kopargaon"];
+                    break;
+                case "Aurangabad":
+                    cities = ["Aurangabad", "Paithan", "Khuldabad", "Sillod", "Gangapur"];
+                    break;
+                case "Kolhapur":
+                    cities = ["Kolhapur", "Ichalkaranji", "Kagal", "Karvir", "Gadhinglaj"];
+                    break;
+                case "Mumbai City":
+                    cities = ["Mumbai", "Byculla", "Colaba", "Fort", "Chembur"];
+                    break;
+                case "Mumbai Suburban":
+                    cities = ["Andheri", "Bandra", "Khar", "Goregaon", "Malad"];
+                    break;
+                case "Nagpur":
+                    cities = ["Nagpur", "Ramtek", "Kamptee", "Katol", "Narkhed"];
+                    break;
+                case "Nashik":
+                    cities = ["Nashik", "Niphad", "Sinnar", "Surgana", "Yeola"];
+                    break;
+                case "Pune":
+                    cities = ["Pune", "Pimpri-Chinchwad", "Baramati", "Lonavla", "Satara"];
+                    break;
+                case "Thane":
+                    cities = ["Thane", "Kalyan-Dombivli", "Ulhasnagar", "Ambarnath", "Badlapur"];
+                    break;
+                case "Satara":
+                    cities = ["Satara", "Karad", "Wai", "Phaltan", "Koregaon"];
+                    break;
+                case "Bhopal":
+                    cities = ["Bhopal", "Indore", "Jabalpur", "Gwalior", "Ujjain"];
+                    break;
+                case "Indore":
+                    cities = ["Indore", "Ujjain", "Ratlam", "Dewas", "Mhow"];
+                    break;
+                case "Gwalior":
+                    cities = ["Gwalior", "Bhind", "Morena", "Shivpuri", "Datia"];
+                    break;
+                case "Jabalpur":
+                    cities = ["Jabalpur", "Katni", "Damoh", "Narsinghpur", "Seoni"];
+                    break;
+                case "Ujjain":
+                    cities = ["Ujjain", "Ratlam", "Mandsaur", "Dhar", "Neemuch"];
+                    break;
+                case "Amritsar":
+                    cities = ["Amritsar", "Jalandhar", "Ludhiana", "Patiala", "Bathinda"];
+                    break;
+                case "Jalandhar":
+                    cities = ["Jalandhar", "Hoshiarpur", "Nakodar", "Kapurthala", "Phagwara"];
+                    break;
+                case "Ludhiana":
+                    cities = ["Ludhiana", "Khanna", "Jagraon", "Malerkotla", "Samrala"];
+                    break;
+                case "Patiala":
+                    cities = ["Patiala", "Nabha", "Rajpura", "Samana", "Sanaur"];
+                    break;
+                case "Bathinda":
+                    cities = ["Bathinda", "Mansa", "Sri Muktsar Sahib", "Barnala", "Faridkot"];
+                    break;
+                case "Jaipur":
+                    cities = ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer"];
+                    break;
+                case "Jodhpur":
+                    cities = ["Jodhpur", "Bikaner", "Pali", "Nagaur", "Barmer"];
+                    break;
+                case "Udaipur":
+                    cities = ["Udaipur", "Bhilwara", "Chittorgarh", "Rajsamand", "Dungarpur"];
+                    break;
+                case "Kota":
+                    cities = ["Kota", "Bundi", "Jhalawar", "Baran", "Tonk"];
+                    break;
+                case "Bikaner":
+                    cities = ["Bikaner", "Hanumangarh", "Churu", "Sri Ganganagar", "Nagaur"];
+                    break;
+                case "Chennai":
+                    cities = ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem"];
+                    break;
+                case "Coimbatore":
+                    cities = ["Coimbatore", "Tiruppur", "Erode", "Pollachi", "Mettupalayam"];
+                    break;
+                case "Madurai":
+                    cities = ["Madurai", "Dindigul", "Sivakasi", "Virudhunagar", "Tirumangalam"];
+                    break;
+                case "Tiruchirappalli":
+                    cities = ["Tiruchirappalli", "Pudukkottai", "Karur", "Perambalur", "Ariyalur"];
+                    break;
+                case "Salem":
+                    cities = ["Salem", "Namakkal", "Attur", "Rasipuram", "Sankagiri"];
+                    break;
+                case "Hyderabad":
+                    cities = ["Hyderabad", "Warangal", "Nizamabad", "Khammam", "Karimnagar"];
+                    break;
+                case "Karimnagar":
+                    cities = ["Karimnagar", "Ramagundam", "Jagtial", "Mancherial", "Sircilla"];
+                    break;
+                case "Khammam":
+                    cities = ["Khammam", "Sathupalli", "Kothagudem", "Palwancha", "Yellandu"];
+                    break;
+                case "Nizamabad":
+                    cities = ["Nizamabad", "Bodhan", "Kamareddy", "Armoor", "Banswada"];
+                    break;
+                case "Warangal":
+                    cities = ["Warangal", "Hanamkonda", "Kazipet", "Jangaon", "Mahabubabad"];
+                    break;
+                case "Visakhapatnam":
+                    cities = ["Visakhapatnam", "Vijayanagaram", "Rajahmundry", "Kakinada", "Anakapalli"];
+                    break;
+                case "Vijayawada":
+                    cities = ["Vijayawada", "Guntur", "Tenali", "Mangalagiri", "Nuzvid"];
+                    break;
+                case "Tirupati":
+                    cities = ["Tirupati", "Chittoor", "Madanapalle", "Puttur", "Srikalahasti"];
+                    break;
+                case "Kurnool":
+                    cities = ["Kurnool", "Nandyal", "Adoni", "Yemmiganur", "Dhone"];
+                    break;
+                case "Nellore":
+                    cities = ["Nellore", "Kavali", "Gudur", "Venkatagiri", "Sullurpeta"];
+                    break;
+
+                default:
+                    cities = ["Select district first"];
+                    break;
+            }
+            city.options.add(new Option("Select City", ""));
+            for (var i = 0; i < cities.length; i++) {
+                city.options.add(new Option(cities[i], cities[i]));
+            }
+        }
+
+
+    </script>
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function (event) {
+            alert("Registered successfully");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>India Districts and Cities</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Select State:</label>
+    <select id="state" onchange="populateDistricts()">
+        <option value="">Select State</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+    </select>
+
+    <label>Select District:</label>
+    <select id="district" onchange="populateCities()">
+        <option value="">Select District</option>
+    </select>
+
+    <label>Select City:</label>
+    <select id="city">
+        <option value="">Select City</option>
+    </select>
+
+    <script>
+        function populateDistricts() {
+            var state = document.getElementById("state").value;
+            var district = document.getElementById("district");
+
+            district.innerHTML = "";
+            if (state === "") {
+                return;
+            }
+
+            var districts = [];
+            switch (state) {
+                case "Andhra Pradesh":
+                    districts = ["Chittoor", "Nellore", "East Godavari", "Guntur", "Krishna", "Kurnool", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari", "YSR Kadapa"];
+                    break;
+                case "Bihar":
+                    districts = ["Araria", "Bhagalpur", "Gaya", "Madhubani", "Muzaffarpur", "Patna", "Rohtas", "Saran", "Vaishali"];
+                    break;
+                case "Gujarat":
+                    districts = ["Ahmedabad", "Bhavnagar", "Gandhinagar", "Junagadh", "Kutch", "Mehsana", "Rajkot", "Surat", "Vadodara"];
+                    break;
+                case "Karnataka":
+                    districts = ["Bangalore Urban", "Belgaum", "Dharwad", "Gulbarga", "Hassan", "Mysore", "Raichur", "Shimoga", "Tumkur"];
+                    break;
+                case "Kerala":
+                    districts = ["Alappuzha", "Ernakulam", "Kannur", "Kollam", "Kottayam", "Palakkad", "Thrissur", "Thiruvananthapuram", "Wayanad"];
+                    break;
+                case "Maharashtra":
+                    districts = ["Ahmednagar", "Aurangabad", "Kolhapur", "Mumbai City", "Mumbai Suburban", "Nagpur", "Nashik", "Pune", "Thane", "Satara"];
+                    break;
+                case "Madhya Pradesh":
+                    districts = ["Bhopal", "Indore", "Gwalior", "Jabalpur", "Ujjain", "Sagar", "Rewa", "Katni", "Chhindwara", "Balaghat"];
+                    break;
+                case "Punjab":
+                    districts = ["Amritsar", "Jalandhar", "Ludhiana", "Patiala", "Bathinda", "Hoshiarpur", "Moga", "Pathankot", "Sangrur", "Fazilka"];
+                    break;
+                case "Rajasthan":
+                    districts = ["Jaipur", "Jodhpur", "Udaipur", "Kota", "Bikaner", "Ajmer", "Alwar", "Bharatpur", "Barmer", "Churu"];
+                    break;
+                case "Tamil Nadu":
+                    districts = ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Vellore", "Erode", "Thanjavur", "Dindigul"];
+                    break;
+                case "Telangana":
+                    districts = ["Adilabad", "Kumarambheem-Asifabad", "Hyderabad", "Jagtial", "Jangaon", "Jayashankar Bhupalapally", "Jogulamba Gadwal", "Kamareddy", "Karimnagar", "Khammam"];
+                    break;
+
+                default:
+                    districts = ["Select state first"];
+
+            }
+            district.options.add(new Option("Select District", ""));
+            for (var i = 0; i < districts.length; i++) {
+                district.options.add(new Option(districts[i], districts[i]));
+            }
+        }
+
+        function populateCities() {
+            var district = document.getElementById("district").value;
+            var city = document.getElementById("city");
+
+            city.innerHTML = "";
+            if (district === "") {
+                return;
+            }
+
+            var cities;
+            switch (district) {
+                case "Ahmednagar":
+                    cities = ["Ahmednagar", "Shirdi", "Sangamner", "Rahuri", "Kopargaon"];
+                    break;
+                case "Aurangabad":
+                    cities = ["Aurangabad", "Paithan", "Khuldabad", "Sillod", "Gangapur"];
+                    break;
+                case "Kolhapur":
+                    cities = ["Kolhapur", "Ichalkaranji", "Kagal", "Karvir", "Gadhinglaj"];
+                    break;
+                case "Mumbai City":
+                    cities = ["Mumbai", "Byculla", "Colaba", "Fort", "Chembur"];
+                    break;
+                case "Mumbai Suburban":
+                    cities = ["Andheri", "Bandra", "Khar", "Goregaon", "Malad"];
+                    break;
+                case "Nagpur":
+                    cities = ["Nagpur", "Ramtek", "Kamptee", "Katol", "Narkhed"];
+                    break;
+                case "Nashik":
+                    cities = ["Nashik", "Niphad", "Sinnar", "Surgana", "Yeola"];
+                    break;
+                case "Pune":
+                    cities = ["Pune", "Pimpri-Chinchwad", "Baramati", "Lonavla", "Satara"];
+                    break;
+                case "Thane":
+                    cities = ["Thane", "Kalyan-Dombivli", "Ulhasnagar", "Ambarnath", "Badlapur"];
+                    break;
+                case "Satara":
+                    cities = ["Satara", "Karad", "Wai", "Phaltan", "Koregaon"];
+                    break;
+                case "Bhopal":
+                    cities = ["Bhopal", "Indore", "Jabalpur", "Gwalior", "Ujjain"];
+                    break;
+                case "Indore":
+                    cities = ["Indore", "Ujjain", "Ratlam", "Dewas", "Mhow"];
+                    break;
+                case "Gwalior":
+                    cities = ["Gwalior", "Bhind", "Morena", "Shivpuri", "Datia"];
+                    break;
+                case "Jabalpur":
+                    cities = ["Jabalpur", "Katni", "Damoh", "Narsinghpur", "Seoni"];
+                    break;
+                case "Ujjain":
+                    cities = ["Ujjain", "Ratlam", "Mandsaur", "Dhar", "Neemuch"];
+                    break;
+                case "Amritsar":
+                    cities = ["Amritsar", "Jalandhar", "Ludhiana", "Patiala", "Bathinda"];
+                    break;
+                case "Jalandhar":
+                    cities = ["Jalandhar", "Hoshiarpur", "Nakodar", "Kapurthala", "Phagwara"];
+                    break;
+                case "Ludhiana":
+                    cities = ["Ludhiana", "Khanna", "Jagraon", "Malerkotla", "Samrala"];
+                    break;
+                case "Patiala":
+                    cities = ["Patiala", "Nabha", "Rajpura", "Samana", "Sanaur"];
+                    break;
+                case "Bathinda":
+                    cities = ["Bathinda", "Mansa", "Sri Muktsar Sahib", "Barnala", "Faridkot"];
+                    break;
+                case "Jaipur":
+                    cities = ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer"];
+                    break;
+                case "Jodhpur":
+                    cities = ["Jodhpur", "Bikaner", "Pali", "Nagaur", "Barmer"];
+                    break;
+                case "Udaipur":
+                    cities = ["Udaipur", "Bhilwara", "Chittorgarh", "Rajsamand", "Dungarpur"];
+                    break;
+                case "Kota":
+                    cities = ["Kota", "Bundi", "Jhalawar", "Baran", "Tonk"];
+                    break;
+                case "Bikaner":
+                    cities = ["Bikaner", "Hanumangarh", "Churu", "Sri Ganganagar", "Nagaur"];
+                    break;
+                case "Chennai":
+                    cities = ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem"];
+                    break;
+                case "Coimbatore":
+                    cities = ["Coimbatore", "Tiruppur", "Erode", "Pollachi", "Mettupalayam"];
+                    break;
+                case "Madurai":
+                    cities = ["Madurai", "Dindigul", "Sivakasi", "Virudhunagar", "Tirumangalam"];
+                    break;
+                case "Tiruchirappalli":
+                    cities = ["Tiruchirappalli", "Pudukkottai", "Karur", "Perambalur", "Ariyalur"];
+                    break;
+                case "Salem":
+                    cities = ["Salem", "Namakkal", "Attur", "Rasipuram", "Sankagiri"];
+                    break;
+                case "Hyderabad":
+                    cities = ["Hyderabad", "Warangal", "Nizamabad", "Khammam", "Karimnagar"];
+                    break;
+                case "Karimnagar":
+                    cities = ["Karimnagar", "Ramagundam", "Jagtial", "Mancherial", "Sircilla"];
+                    break;
+                case "Khammam":
+                    cities = ["Khammam", "Sathupalli", "Kothagudem", "Palwancha", "Yellandu"];
+                    break;
+                case "Nizamabad":
+                    cities = ["Nizamabad", "Bodhan", "Kamareddy", "Armoor", "Banswada"];
+                    break;
+                case "Warangal":
+                    cities = ["Warangal", "Hanamkonda", "Kazipet", "Jangaon", "Mahabubabad"];
+                    break;
+                case "Visakhapatnam":
+                    cities = ["Visakhapatnam", "Vijayanagaram", "Rajahmundry", "Kakinada", "Anakapalli"];
+                    break;
+                case "krishna":
+                    cities = ["Vijayawada", "Guntur", "Tenali", "Mangalagiri", "Nuzvid"];
+                    break;
+                case "Chittoor":
+                    cities = ["Tirupati", "Chittoor", "Madanapalle", "Puttur", "Srikalahasti"];
+                    break;
+                case "Kurnool":
+                    cities = ["Kurnool", "Nandyal", "Adoni", "Yemmiganur", "Dhone"];
+                    break;
+                case "East Godavari":
+                    cities = ["Rajahmundry", "Kakinada", "amalapuram", "samarlakota", "tuni"];
+                    break;
+
+
+
+                default:
+                    cities = ["Select district first"];
+                    break;
+            }
+            city.options.add(new Option("Select City", ""));
+            for (var i = 0; i < cities.length; i++) {
+                city.options.add(new Option(cities[i], cities[i]));
+            }
+        }
+    </script>
+
+</body>
+
+</html>

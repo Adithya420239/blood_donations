@@ -1,0 +1,17 @@
+div{
+  padding: 10px;
+}
+body{
+  position: absolute;
+  padding-left: 500px;
+  text-align:center;
+}
+body {
+  background-attachment:fixed;
+  background-size:cover;
+  color: #FFFFFF;
+}
+div{
+  font-family: Cambria, Cochin, Georgia, Times, serif;
+  font-size: 16px;
+}
